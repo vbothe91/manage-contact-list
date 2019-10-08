@@ -52,3 +52,7 @@ The application is used to maintain the contact information with below functiona
 *  **Phone number** - This is a mandatory field and needs a 10 digit mobile number.
 
 * **Status** - This is a mandatory field.
+
+
+## Author
+* Vishwas Bothe
