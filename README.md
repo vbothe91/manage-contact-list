@@ -15,7 +15,7 @@ The application is used to maintain the contact information with below functiona
 
 * Edit and Remove functionality available after contact creation.
 
-* Application will handle below functionalility
+* Application will handle below functionalility*
  - List contacts
  - Add a contact
  - Edit contact
