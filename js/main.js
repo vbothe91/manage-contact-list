@@ -44,7 +44,7 @@ var Contacts = {
 				last_name: this.last_name.value.trim(),
 				email: this.email.value.trim(),
 				phone:this.phone.value.trim(),
-				status_val:this.status_val.value,
+				status_val:Contacts.getValueFromRadioButton(),
 			};
 
 			if (Contacts.validateUserInput(entry) == false) {
@@ -215,7 +215,7 @@ var Contacts = {
 			}
 		}
 
-		if(entry.status_val == "") {
+		if(entry.status_val == "" || (entry.status_val != "Active" && entry.status_val != "Inactive")) {
 			Contacts.printError("statusErr", "Please enter valid Status");
 		} else {
 			Contacts.printError("statusErr", "");
@@ -238,6 +238,17 @@ var Contacts = {
 	
 	printError: function(elemId, hintMsg) {
 		document.getElementById(elemId).innerHTML = hintMsg;
+	},
+	
+	getValueFromRadioButton: function() {
+		var buttons = document.getElementsByName('status_val');
+		for (var i = 0; i < buttons.length; i++) {
+			var button = buttons[i];
+			if (button.checked) {
+				return button.value;
+			}
+		}
+		return '';
 	}
 };
 
