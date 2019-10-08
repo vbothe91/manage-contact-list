@@ -215,7 +215,7 @@ var Contacts = {
 			}
 		}
 
-		if(entry.status_val == "" || (entry.status_val != "Active" && entry.status_val != "Inactive")) {
+		if(entry.status_val == "") {
 			Contacts.printError("statusErr", "Please enter valid Status");
 		} else {
 			Contacts.printError("statusErr", "");
