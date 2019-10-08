@@ -15,18 +15,18 @@ The application is used to maintain the contact information with below functiona
 
 * Edit and Remove functionality available after contact creation.
 
-* Application will handle below functionalility*
- - List contacts
- - Add a contact
- - Edit contact
- - Remove contact
+* Application will handle below functionalility
+   - List contacts
+   - Add a contact
+   - Edit contact
+   - Remove contact
 
 * Each contact will be having below fields
- - First name
- - Last name
- - Email
- - Phone number
- - Status
+   - First name
+   - Last name
+   - Email
+   - Phone number
+   - Status
  
 * Application is handled with responsive design considering desktop, tablet, and mobile devices. Few fields like email, status will not be visible in contact listing on mobile for better user experience. However, those fields can be added or edited.
 
