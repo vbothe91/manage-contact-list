@@ -1,0 +1,96 @@
+<!doctype html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="shortcut icon" type="image/png" href="images/fevicon.png" />
+		<title>Manage Contacts</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<div class="addEmployeeModal" id ="addEmployeeModal"></div>
+		<div class="mainContanier">
+			<div class="headerContainer">
+				<div class="header">
+					<div class="heading">Manage <span>Contacts</span></div>
+					<div id="addContacts" class="addContacts">
+						<div class="image"><img src="images/add.png" height="27" width="26" alt="add button"></div>
+						<div class="addContent">Create Contact</div>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="tableContainer">
+				<table id="contactsTable">
+					<tr>
+						<th>Id</th>
+						<th>First name</th>
+						<th>Last name</th>
+						<th>Email</th>
+						<th>Phone number</th>
+						<th>Status</th>
+						<th>Actions</th>
+					</tr>
+				</table>
+			</div>
+			<div class="clear"></div>
+			<div class="content">Click on "Create Contact" button to add new a contact.</div>
+		</div>
+
+		<div class="formData" id ="formData">
+			<div class="modelHeader">
+				<div class="modelHeading" id="modelHeading">Add Contact</div>
+				<span class="close" id="close">X</span>
+				<div class="clear"></div>
+			</div>
+			<div class="formContainer">
+				<form id="contactsForm">
+					<div class="item text">
+						<label>First name: *</label><span class="error" id="firstNameErr"></span>
+						<div class="field">
+							<input type="text" name="first_name" required />
+						</div>
+					</div>
+					<div class="item text">
+						<label>Last name: *</label><span class="error" id="lastNameErr"></span>
+						<div class="field">
+							<input type="text" name="last_name" required />
+						</div>
+					</div>
+					<div class="item text">
+						<label>Email:</label><span class="error" id="emailErr"></span>
+						<div class="field">
+							<input type="email" name="email" />
+						</div>
+					</div>
+					<div class="item text">
+						<label>Phone number: *</label><span class="error" id="phoneErr"></span>
+						<div class="field">
+							<input type="tel" name="phone" required />
+						</div>
+					</div>
+					<div class="item">
+						<label>Status: *</label><span class="error" id="statusErr"></span>
+						<div class="field">
+							<input type="radio" value="Active" name="status_val">Active
+							<input type="radio" value="Inactive" name="status_val">Inactive
+						</div>
+					</div>
+					<div class="button-wrapper">
+						<div class="item button">
+							<input type="button" id="buttonDiscard" value="Clear" />
+						</div>
+						<div class="item button button-default">
+							<input type="submit" id="contacts-op-save" value="Save" />
+						</div>
+					</div>
+					<input type="hidden" name="id_entry" value="0" />
+				</form>
+			</div>
+		</div>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>
